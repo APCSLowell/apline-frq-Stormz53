@@ -9,7 +9,7 @@ private int m,x,b;
   public double getSlope(){
     return -1*(double)m/x;
   }
-  public boolean isOnline(int x, int y){
+  public boolean isOnLine(int x, int y){
     if((m*(x) + x*(y) + b) == 0)
       return true;
     return false;
