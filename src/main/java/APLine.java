@@ -7,10 +7,10 @@ private int m,x,b;
     int b = l;
   }
   public double getSlope(){
-    return (double)m/x;
+    return -1*(double)m/x;
   }
   public boolean isOnline(int x, int y){
-    if((a*(x) + b*(y) + c) == 0)
+    if((m*(x) + x*(y) + b) == 0)
       return true;
     return false;
   }
