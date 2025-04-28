@@ -1,17 +1,15 @@
 public class APLine
 {
-private int m,x,b;
-  public APLine(int j, int k, int l){
-    int m = j;
-    int x = k;
-    int b = l;
+ private int a,b,c;
+  public APLine(int a1, int b1, int c1){
+    a = a1;
+    b = b1;
+    c = c1;
   }
   public double getSlope(){
-    return -1*(double)m/x;
+    return -(double)a / b;
   }
   public boolean isOnLine(int x, int y){
-    if((m*(x) + x*(y) + b) == 0)
-      return true;
-    return false;
+    return a*x + b*y + c ==0;
   }
 }
